@@ -46,7 +46,7 @@ body{
 	line-height: 25px;
 }
 
-.join_btn {
+.join_btn, .form__btn {
 	margin-top: 20px;
 	background: rgb(67,156,251);
 	background: linear-gradient(90deg, rgba(67,156,251,1) 0%, rgba(241,135,251,1) 100%);
@@ -59,7 +59,7 @@ body{
 	height: 40px;
 }
 
-.join_btn:hover {
+.join_btn:hover, .form__btn:hover {
 	cursor: pointer;
 	background: linear-gradient(90deg, rgba(241,135,251,1) 0%, rgba(67,156,251,1) 100%);
 }
@@ -168,7 +168,7 @@ body{
 	margin-top: 100px;
 }
 
-.speakers__title, .accordion__title {
+.speakers__title, .accordion__title, .form__title {
 	font-weight: 700;
 	font-size: 35px;
 }
@@ -240,20 +240,20 @@ height: 40px;
     display: none;
 	padding-bottom: 20px;
     overflow: hidden;
-    transition: all 0.9s;
 	font-size: 21px;
 	line-height: 25px;
 	
 }
 
 .accordion-header {
+	padding: 25px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    padding: 35px 0;
 	font-size: 25px;
 	font-weight: 700;
     cursor: pointer;
+	
 }
 
 
@@ -265,21 +265,54 @@ height: 40px;
 }
 
 .accordion-content.active {
-    max-height: 200px; 
+    max-height: 250px; 
 }
 
-.arrow_wrap {
-	margin-top: 20px;
-}
-.arrow .active{
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
-}
-
-.accordion-item.active .arrow {
+ .active_arrow   {
     transform: translateY(-50%) rotate(-180deg);
 }
+.form {
+	margin: 100px 0;
+}
 
+.form__content {
+	margin-top: 30px;
+	display: flex;
+	flex-basis: 50%;
+	gap: 40px;
+}
+
+.form__img {
+	max-width: 460px;
+}
+
+.form__text {
+	font-size: 21px;
+	line-height: 25px;
+}
+
+.form__inpits {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form__input {
+	background: none;
+	height: 45px;
+	border: 1px solid rgba(64, 64, 64, 1);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.form__input::placeholder {
+text-align: center;
+}
+
+.form__btn {
+	width: 100%;
+}
 
 
 .footer {
@@ -316,3 +349,6 @@ height: 40px;
 	cursor: pointer;
 	color: rgb(92, 92, 92);
 }
+
+
+

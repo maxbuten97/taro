@@ -30,16 +30,11 @@ nextButton.addEventListener('click', () => {
 accordionItems.forEach(item => {
 	const header = item.querySelector('.accordion-header');
 	const content = item.querySelector('.accordion-content');
+	const arrow = item.querySelector('.arrow_wrap'); // Получаем элемент стрелочки
 
-	// При клике на заголовок, показываем/скрываем контент
+	// При клике на заголовок, плавно изменяем высоту контента и меняем стиль стрелочки
 	header.addEventListener('click', () => {
 		content.classList.toggle('active');
-		// Покажем или скроем все активные элементы аккордеона
-		const activeItems = document.querySelectorAll('.accordion-item .accordion-content.active');
-		activeItems.forEach(activeItem => {
-			if (activeItem !== content) {
-				activeItem.classList.remove('active');
-			}
-		});
+		arrow.classList.toggle('active_arrow');
 	});
 });
