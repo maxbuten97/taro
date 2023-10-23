@@ -463,6 +463,13 @@ text-align: center;
 	z-index: 2;
 }
 
+.prev-button:hover, .next-button:hover {
+background-color: rgb(137, 151, 167);
+}
+
+.prev-button:active, .next-button:active {
+	background-color: rgb(163, 178, 194);
+}
 .prev_img, .next_img {
 	height: 25px;
 	padding: 5px 5px 0 0;
@@ -676,6 +683,15 @@ text-align: center;
 	top: 100%;
 	left: 50%;
 }
+
+.prev-button:hover, .next-button:hover {
+background-color: rgb(137, 151, 167);
+}
+
+.prev-button:active, .next-button:active {
+	background-color: rgb(163, 178, 194);
+}
+
 .prev_img {
 	height: 25px;
 	padding: 5px 5px 0 0;
